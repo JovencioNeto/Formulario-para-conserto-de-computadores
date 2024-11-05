@@ -97,3 +97,16 @@ body {
         padding: 8px;
     }
 }
+
+@media (max-width: 400px), (max-height: 500px) {
+    .form-container {
+        padding: 8px;
+    }
+    .form-container h2 {
+        font-size: 1.1em;
+    }
+    .submit-btn {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+}
