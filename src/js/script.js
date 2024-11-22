@@ -8,7 +8,7 @@ const clienteRequirement = document.getElementById('client-requirement')
 
 
 button.addEventListener('click', ()=>{
-    if(computerModel.value.lenght == 0){
+    if(computerModel.value.length == 0){
         alert(`
             Nome do cliente: ${clienteName.value}
             Número do cliente: ${phoneNumber.value}
