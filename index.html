@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência para conserto de computadores</title>
     <link rel="stylesheet" href="./src/css/index.css">
+    <script src="./src/js/script.js" defer></script>
 </head>
 <body>
     <div class="form-container">
         <h2>Formulário para Conserto de Computador</h2>
-        <form action="enviar_conserto.php" method="POST">
+        <form action="https://formsubmit.co/jovencioneto75@gmail.com" method="POST">
             <div class="form-group">
-                <label for="computer-model">Modelo do Computador</label>
-                <input type="text" id="computer-model" name="computer_name" required>
+                <label for="computer-model">Modelo do Computador (Opcional)</label>
+                <input type="text" id="computer-model" name="Modelo do Computador" placeholder="Digite o modelo do notebook">
             </div>
             <div class="form-group">
                 <label for="client-name">Nome do Cliente</label>
-                <input type="text" id="client-name" name="client_name" required>
+                <input type="text" id="client-name" name="Nome do cliente" required placeholder="Digite o seu nome">
             </div>
             <div class="form-group">
                 <label for="phone-number">Número de Telefone</label>
-                <input type="tel" id="phone-number" name="phone_number" required>
+                <input type="tel" id="phone-number" name="número de telefone" placeholder="Digite aqui seu número">
             </div>
             <div class="form-group">
                 <label for="warning-model">Aviso</label>
-                <textarea input type="text" id="warning-model" name="computer_model" required></textarea>
+                <textarea input type="text" id="warning-model" name="Avisos sobre o computador" required placeholder="Digite qualquer aviso sobre o computador "></textarea>
             </div>
             <div class="form-group">
                 <label for="client-requirement">Requisito do Cliente</label>
-                <textarea id="client-requirement" name="client_requirement" rows="4" required></textarea>
+                <textarea id="client-requirement" name="Requisitos do cliente" rows="4" required placeholder="Digite o que será feito no computador"></textarea>
             </div>
-            <button type="submit" class="submit-btn">Enviar</button>
+            <button type="submit" class="submit-btn" id="button_submit">Enviar</button>
         </form>
     </div>
 </body>
